@@ -1,6 +1,6 @@
 <div class="rounded-md drop-shadow-md p-4 bg-slate-200">
   <h2 class="pb-2 text-4xl">{{ title }}</h2>
-  <table class="table-auto">
+  <table class="table-auto" *ngIf="items.length > 0">
     <thead>
     <tr>
       <th>Item</th>
@@ -19,4 +19,5 @@
     </tr>
     </tbody>
   </table>
+  <p *ngIf="items.length == 0">Your cart is empty!</p>
 </div>
