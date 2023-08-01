@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'csf-day31-workshop';
+  title = 'Shopping Cart';
   items: any[] = [];
   addToCart(item: string) {
     let index: number = this.items.findIndex(obj => obj.name === item);
